@@ -6,8 +6,22 @@ header {
   width: 100%;
 }
 
+.master-grid {
+  max-width: 900px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1em;
+  padding: 1em;
+}
+
 .container {
-  display: flex;
+  display: grid;
+  grid-template-areas: "Things I've Built" "Project_1 Project_1" "Project_2 Project_2" "Project_3 Project_3" "Project_4 Project_4";
+  gap: 100px;
+  padding: 2px;
+  -ms-grid-row-align: center;
+  -ms-grid-column-align: center;
 }
 
 .nav {
@@ -29,15 +43,44 @@ img {
 }
 
 h2 {
-  background-color: blanchedalmond;
+  background-color: blanchedalmond !important;
+  height: 2pc;
+  inline-size: 80%;
+  text-align: center;
+  align-items: center;
   border: 3px 3px 3px 3px;
 }
 
 h3 {
-  padding-top: 20px;
   background-color: cornsilk;
+  inline-size: 80%;
+  text-align: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+p {
+  inline-size: 80%;
+  text-align: center;
+  align-items: center;
 }
 
 body {
   background-color: seagreen;
+}
+
+.contact {
+  border: 2px;
+  border-width: 0.5pc;
+  padding: 10px;
+  margin: 10px;
+  /* align-items: center;
+  text-align: center; */
+  inline-size: 80%;
+}
+
+.stuff {
+  display: flex;
+  border: 3px 3px 3px 3px;
+  flex: 1;
 }
